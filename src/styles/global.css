@@ -1,0 +1,92 @@
+:root {
+    /* purple blobs */
+    --blob-1: rgba(168, 85, 247, 0.55);
+    --blob-2: rgba(139, 92, 246, 0.4);
+    --blob-3: rgba(192, 132, 252, 0.28);
+
+    --blob-1: rgba(251, 146, 60, 0.72);
+    --blob-2: rgba(249, 115, 22, 0.5);
+    --blob-3: rgba(251, 191, 36, 0.24);
+
+
+}
+
+
+
+
+html {
+    background: #09090f;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+    background:
+        radial-gradient(circle at top middle, rgba(168, 85, 247, 0.08), transparent 30%),
+        radial-gradient(circle at bottom right, rgba(192, 132, 252, 0.09), transparent 30%),
+        #09090f;
+    overflow-x: hidden;
+}
+
+body::before,
+body::after {
+    content: "";
+    position: fixed;
+    width: 38rem;
+    height: 38rem;
+    border-radius: 50%;
+    pointer-events: none;
+    filter: blur(90px);
+    opacity: 0.75;
+    z-index: 0;
+    animation: floatBlob 18s ease-in-out infinite alternate;
+}
+
+body::before {
+    top: -8rem;
+    left: 20rem;
+    background: radial-gradient(circle, var(--blob-1) 0%, var(--blob-2) 32%, transparent 70%);
+}
+
+body::after {
+    right: -8rem;
+    bottom: -10rem;
+    background: radial-gradient(circle, var(--blob-3) 0%, var(--blob-2) 36%, transparent 72%);
+    animation-delay: 1.5s;
+}
+
+@keyframes floatBlob {
+    0% {
+        transform: translate3d(0, 0, 0) scale(1);
+    }
+
+    50% {
+        transform: translate3d(2.5rem, -1.5rem, 0) scale(1.08);
+    }
+
+    100% {
+        transform: translate3d(-1.5rem, 2rem, 0) scale(0.98);
+    }
+}
+
+main,
+.site-frame,
+.page,
+.content-panel,
+.sl-container,
+.sl-markdown-content,
+.sl-sidebar-pane,
+.sl-nav {
+    position: relative;
+    z-index: 1;
+}
+
+@media (max-width: 768px) {
+
+    body::before,
+    body::after {
+        width: 18rem;
+        height: 18rem;
+        filter: blur(70px);
+    }
+}
