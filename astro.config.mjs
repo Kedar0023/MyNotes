@@ -5,6 +5,8 @@ import starlightThemeNext from 'starlight-theme-next'
 
 // https://astro.build/config
 export default defineConfig({
+    site: 'https://Kedar0023.github.io',
+    base: '/MyNotes',
 	integrations: [
 		starlight({
 			plugins: [starlightThemeNext()],
