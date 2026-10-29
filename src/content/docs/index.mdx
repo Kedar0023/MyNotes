@@ -9,12 +9,18 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
 	<Card title="Git & GitHub" icon="open-book">
 		A roadmap from Git basics through advanced workflows, internals, and interview practice.
 
-		[Explore Git & GitHub](./notes/git/)
+		<a href={`${import.meta.env.BASE_URL}/notes/git/`}>Explore Git & GitHub</a>
 	</Card>
 
 	<Card title="Docker" icon="seti:docker">
 		Quick-reference notes on images, containers, Dockerfiles, compose setup, and cleanup workflows.
 
-		[Explore Docker](./notes/docker/)
+		<a href={`${import.meta.env.BASE_URL}/notes/docker/`}>Explore Docker</a>
+	</Card>
+
+	<Card title="Bitwise" icon="seti:code">
+		Bitwise foundations, attack patterns, and advanced XOR/DP techniques for coding interviews.
+
+		<a href={`${import.meta.env.BASE_URL}/notes/bitwise/`}>Explore Bitwise</a>
 	</Card>
 </CardGrid>

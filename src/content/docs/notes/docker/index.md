@@ -7,11 +7,11 @@ sidebar:
 
 | # | Note | What you'll revise |
 |---|---|---|
-| 1 | [Docker Commands](/notes/docker/commands/) | Image lifecycle, containers, logs, exec, cleanup, and common CLI commands |
-| 2 | [Dockerfile](/notes/docker/dockerfile/) | Base image, layers, caching, environment variables, ports, and best practices |
-| 3 | [.dockerignore](/notes/docker/dockerignore/) | Exclude build context files, keep images smaller, and avoid leaking sensitive data |
-| 4 | [Docker Compose Basics](/notes/docker/basics-of-compose/) | Compose file structure, services, networks, volumes, env vars, and common patterns |
-| 5 | [Docker Compose Reference](/notes/docker/docker-compose-ref/) | Service options, volumes, networks, env vars, healthchecks, profiles, overrides, and secrets |
+| 1 | [Docker Commands](./commands/) | Image lifecycle, containers, logs, exec, cleanup, and common CLI commands |
+| 2 | [Dockerfile](./dockerfile/) | Base image, layers, caching, environment variables, ports, and best practices |
+| 3 | [.dockerignore](./dockerignore/) | Exclude build context files, keep images smaller, and avoid leaking sensitive data |
+| 4 | [Docker Compose Basics](./basics-of-compose/) | Compose file structure, services, networks, volumes, env vars, and common patterns |
+| 5 | [Docker Compose Reference](./docker-compose-ref/) | Service options, volumes, networks, env vars, healthchecks, profiles, overrides, and secrets |
 
 ## Quick checklist
 

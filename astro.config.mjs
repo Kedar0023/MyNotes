@@ -21,6 +21,10 @@ export default defineConfig({
 					label: 'Docker',
 					items: [{ autogenerate: { directory: 'notes/docker' } }],
 				},
+				{
+					label: 'Bitwise',
+					items: [{ autogenerate: { directory: 'notes/bitwise' } }],
+				},
 			],
 		}),
 	],
